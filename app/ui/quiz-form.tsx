@@ -3,6 +3,7 @@
 import { ArrowRightIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import { Priority, Doneness } from '../lib/steak-selector-data';
+import Link from 'next/link';
 
 export default function SteakQuizForm() {
   const [priorities, setPriorities] = useState<Priority[]>(['cost', 'texture', 'flavor']);
@@ -129,14 +130,20 @@ export default function SteakQuizForm() {
             </select>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex gap-4">
             <button
-              className="w-1/3 flex items-center justify-center gap-2 rounded-lg bg-steak-300 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-steak-100"
+              className="w-1/2 flex items-center justify-center gap-2 rounded-lg bg-steak-300 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-steak-100 shadow-lg"
               type="button"
               onClick={handleSubmit}
             >
               Submit <ArrowRightIcon className="h-5 w-5" />
             </button>
+            <Link 
+            href="/" 
+            className="w-1/2 flex items-center justify-center gap-2 bg-steak-200 text-white px-6 py-3 rounded-lg hover:bg-steak-300 transition-colors font-medium shadow-lg"
+            >
+              Back to Home
+            </Link>
           </div>
 
           <div className="flex h-8 items-end space-x-1 mt-2">
