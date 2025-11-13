@@ -16,21 +16,23 @@ export default function QuizResults() {
   if (!priority1 || !priority2 || !priority3 || !doneness) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-steak-50 rounded-lg p-6">
+        <div className="bg-steak-50 rounded-lg p-6 flex flex-col items-center">
           <h2 className="text-xl font-bold text-red-800 mb-2">Missing Information</h2>
           <p className="text-red-600">Please complete the quiz to see your results.</p>
-          <Link 
-            href="/quiz" 
-            className="mt-4 inline-block bg-steak-300 dark:bg-steak-200  text-white px-6 py-2 rounded-lg hover:bg-steak-100 transition-colors shadow-lg"
-          >
-            Take Quiz
-          </Link>
-          <Link 
-            href="/" 
-            className="flex-1 text-center bg-steak-50 text-gray-800 px-6 py-3 rounded-lg hover:bg-steak-50 transition-colors font-medium shadow-lg"
-          >
-            Back to Home
-          </Link>
+          <div className='flex gap-4'>
+            <Link 
+              href="/quiz" 
+              className="mb-4 flex items-center justify-center rounded-lg bg-steak-300 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-steak-100 shadow-lg"
+            >
+              Take Quiz
+            </Link>
+            <Link 
+              href="/" 
+              className="mb-4 flex items-center justify-center bg-steak-200 text-white px-6 py-3 rounded-lg hover:bg-steak-300 transition-colors font-medium shadow-lg"
+            >
+              Back to Home
+            </Link>
+          </div>
         </div>
       </div>
     );
@@ -43,7 +45,7 @@ export default function QuizResults() {
     <div className="max-w-4xl mx-auto px-4 py-8">
         <h1 className={`text-5xl text-black dark:text-white  mb-2`}>Your Steak Recommendations</h1>
         <p className="text-black dark:text-stone-50 text-2xl">
-        Based on your priorities: {priorities.join(' → ')} | Doneness: {doneness}
+        Based on your priorities: {priorities.join(',')} | Doneness: {doneness}
         </p>
 
         {/* Options Side by Side */}
