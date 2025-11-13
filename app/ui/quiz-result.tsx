@@ -35,8 +35,8 @@ export default function QuizResults() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className={`text-5xl text-black mb-2`}>Your Steak Recommendations</h1>
-        <p className="text-black text-2xl">
+        <h1 className={`text-5xl text-black  mb-2`}>Your Steak Recommendations</h1>
+        <p className="text-black dark:text-white text-2xl">
         Based on your priorities: {priorities.join(' → ')} | Doneness: {doneness}
         </p>
 
@@ -45,8 +45,8 @@ export default function QuizResults() {
             {/* Option A */}
             <div className="bg-steak-50 rounded-lg shadow-lg overflow-hidden">
             <div className="p-6">
-                <h2 className="text-2xl font-bold text-gray-800 mb-3">{result.optionA}</h2>
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">{result.optionA}</h2>
+                <p className="text-gray-700 dark:text-white leading-relaxed text-lg">
                 {result.descriptionA}
                 </p>
             </div>
@@ -55,8 +55,8 @@ export default function QuizResults() {
             {/* Option B */}
             <div className="bg-steak-50 rounded-lg shadow-lg overflow-hidden">
             <div className="p-6">
-                <h2 className="text-2xl font-bold text-gray-800 mb-3">{result.optionB}</h2>
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">{result.optionB}</h2>
+                <p className="text-gray-700 dark:text-white leading-relaxed text-lg">
                 {result.descriptionB}
                 </p>
             </div>
@@ -73,7 +73,7 @@ export default function QuizResults() {
           </Link>
           <Link 
             href="/" 
-            className="flex-1 text-center bg-steak-50 text-gray-800 px-6 py-3 rounded-lg hover:bg-steak-50 transition-colors font-medium"
+            className="flex-1 text-center bg-steak-50 text-gray-800 dark:text-white px-6 py-3 rounded-lg hover:bg-steak-50 transition-colors font-medium"
           >
             Back to Home
           </Link>
