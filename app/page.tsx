@@ -22,20 +22,20 @@ export default function Page() {
             <span>Start Quiz Here</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+        <div className="flex justify-center">
           {/* Add Hero Images Here */}
           <Image
             src="/hero-desktop.jpg"
             width={1000}
             height={760}
-            className='hidden md:block'
+            className='hidden md:block rounded-lg'
             alt='Screenshot of some steak from my photos desktop version'
           />
           <Image
             src="/hero-mobile.jpg"
             width={560}
             height={620}
-            className='block md:hidden'
+            className='block md:hidden rounded-lg w-full h-auto'
             alt='Screenshot of some steak from my photos mobile version'
           />
         </div>
