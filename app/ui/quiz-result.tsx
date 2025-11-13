@@ -45,7 +45,7 @@ export default function QuizResults() {
     <div className="max-w-4xl mx-auto px-4 py-8">
         <h1 className={`text-5xl text-black dark:text-white  mb-2`}>Your Steak Recommendations</h1>
         <p className="text-black dark:text-stone-50 text-2xl">
-        Based on your priorities: {priorities.join(',')} | Doneness: {doneness}
+        Based on your priorities: {priorities.join(', ')} and {doneness} doneness.  
         </p>
 
         {/* Options Side by Side */}
