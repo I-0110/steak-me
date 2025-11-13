@@ -67,7 +67,7 @@ export default function QuizResults() {
         <div className="px-8 py-6 flex gap-4">
           <Link 
             href="/quiz" 
-            className="flex-1 text-center bg-steak-300 text-white px-6 py-3 rounded-lg hover:bg-steak-100 transition-colors font-medium"
+            className="flex-1 text-center bg-steak-300 text-white px-6 py-3 rounded-lg hover:bg-steak-100 transition-colors font-medium shadow-xl"
           >
             Retake Quiz
           </Link>
