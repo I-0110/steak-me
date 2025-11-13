@@ -2,7 +2,7 @@ import SteakLogo from '@/app/ui/steak-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { merriweather } from './ui/fonts';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Page() {
   return (
@@ -23,21 +23,37 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex justify-center">
-          {/* Add Hero Images Here */}
-          <Image
-            src="/hero-desktop.jpg"
-            width={1000}
-            height={760}
-            className='hidden md:block rounded-lg'
-            alt='Screenshot of some steak from my photos desktop version'
-          />
-          <Image
-            src="/hero-mobile.jpg"
-            width={560}
-            height={620}
+          {/* Add Hero Videos Here */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            // width={1000}
+            // height={760}
+            className='hidden md:block rounded-lg w-full h-full object-cover'
+            // alt='Screenshot of some steak from my photos desktop version'
+          >
+            <source 
+              src="/hero-desktop.mp4" 
+              type="video/mp4" 
+            />
+          </video>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            // width={560}
+            // height={620}
             className='block md:hidden rounded-lg w-full h-auto'
-            alt='Screenshot of some steak from my photos mobile version'
-          />
+            // alt='Screenshot of some steak from my photos mobile version'
+          >
+            <source 
+              src="/hero-mobile.mp4" 
+              type="video/mp4" 
+            />
+          </video>
         </div>
       </div>
     </main>
