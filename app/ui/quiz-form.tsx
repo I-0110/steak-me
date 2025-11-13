@@ -75,12 +75,12 @@ export default function SteakQuizForm() {
         </h1>
         <div className="w-full">
           <label
-            className="mb-3 mt-5 block text-lg text-black"
+            className="mb-3 mt-5 block text-lg text-black dark:text-white"
             htmlFor="priority"
           >
             Question 1: Organize Your Priorities
           </label>
-          <p className="mb-4 text-sm text-gray-800">
+          <p className="mb-4 text-sm text-gray-800 dark:text-white">
             Drag to reorder from most important (top) to least important (bottom).
           </p>
 
@@ -103,7 +103,7 @@ export default function SteakQuizForm() {
           </div>
 
           <label
-            className="mb-3 mt-5 block text-lg text-black"
+            className="mb-3 mt-5 block text-lg text-black dark:text-white"
             htmlFor="doneness"
           >
             Question 2: Select Your Preferred Doneness

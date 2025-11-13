@@ -7,7 +7,7 @@ export default function SteakLogo() {
         className={`${rye.className} flex flex-row items-center leading-none text-white`}
         >
             <Image
-                className="h-12 w-12 dark:invert"
+                className="h-12 w-12 dark:opacity-90"
                 src="/steak.svg"
                 alt="Steak logo"
                 width={100}
