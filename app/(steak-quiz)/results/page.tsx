@@ -6,7 +6,7 @@ import { Suspense } from 'react';
 export default function Page() {
   return (
     <main className={`${merriweather.className}flex min-h-screen flex-col p-4`}>
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-[#8f250c] p-4 ">
+      <div className="flex h-20 shrink-0 items-end rounded-lg bg-steak-300 p-4 ">
         <SteakLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4">

@@ -70,7 +70,7 @@ export default function SteakQuizForm() {
   return (
     <div className="space-y-3">
       <div className="flex-1 rounded-lg px-6 pb-4 pt-8">
-        <h1 className={`text-[#691e06] mb-3 text-2xl`}>
+        <h1 className={`text-steak-400 mb-3 text-2xl`}>
           Please answer these questions: 
         </h1>
         <div className="w-full">
@@ -92,7 +92,7 @@ export default function SteakQuizForm() {
                 onDragStart={() => handleDragStart(priority)}
                 onDragOver={handleDragOver}
                 onDrop={() => handleDrop(priority)}
-                className="bg-transparent text-black p-4 rounded-md border-2 cursor-move hover:bg-[#ca5310] hover:text-white transition-colors"
+                className="bg-transparent text-black p-4 rounded-md border-2 cursor-move hover:bg-steak-100 hover:text-white transition-colors"
               >
                 <div className="flex justify-between items-center text-gray-800 hover:text-white">
                   <span className="font-medium capitalize">{priority}</span>
@@ -115,7 +115,7 @@ export default function SteakQuizForm() {
               name="doneness"
               value={doneness}
               onChange={(e) => setDoneness(e.target.value as Doneness)}
-              className="peer block w-full rounded-md bg-transparent py-3 px-4 text-sm outline-2 placeholder:text-gray-800 hover:bg-[#ca5310] hover:text-white focus:ring-2"
+              className="peer block w-full rounded-md bg-transparent py-3 px-4 text-sm outline-2 placeholder:text-gray-800 hover:bg-steak-100 hover:text-white focus:ring-2"
               aria-describedby="doneness-error"
             >
               <option value="">
@@ -131,7 +131,7 @@ export default function SteakQuizForm() {
 
           <div className="flex gap-3">
             <button
-              className="w-1/3 flex items-center justify-center gap-2 rounded-lg bg-[#8f250c] px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-[#ca5310]"
+              className="w-1/3 flex items-center justify-center gap-2 rounded-lg bg-steak-300 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-steak-100"
               type="button"
               onClick={handleSubmit}
             >

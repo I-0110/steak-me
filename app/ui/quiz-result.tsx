@@ -21,7 +21,7 @@ export default function QuizResults() {
           <p className="text-red-600">Please complete the quiz to see your results.</p>
           <Link 
             href="/quiz" 
-            className="mt-4 inline-block bg-[#8f250c] text-white px-6 py-2 rounded-lg hover:bg-[#ca5310] transition-colors"
+            className="mt-4 inline-block bg-steak-300 text-white px-6 py-2 rounded-lg hover:bg-steak-100 transition-colors"
           >
             Take Quiz
           </Link>
@@ -43,7 +43,7 @@ export default function QuizResults() {
         {/* Options Side by Side */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Option A */}
-            <div className="bg-[#fbba72]/25 rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-steak-50 rounded-lg shadow-lg overflow-hidden">
             <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-3">{result.optionA}</h2>
                 <p className="text-gray-700 leading-relaxed text-lg">
@@ -53,7 +53,7 @@ export default function QuizResults() {
             </div>
 
             {/* Option B */}
-            <div className="bg-[#fbba72]/25 rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-steak-50 rounded-lg shadow-lg overflow-hidden">
             <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-3">{result.optionB}</h2>
                 <p className="text-gray-700 leading-relaxed text-lg">
@@ -67,13 +67,13 @@ export default function QuizResults() {
         <div className="px-8 py-6 bg-white flex gap-4">
           <Link 
             href="/quiz" 
-            className="flex-1 text-center bg-[#8f250c] text-white px-6 py-3 rounded-lg hover:bg-[#ca5310] transition-colors font-medium"
+            className="flex-1 text-center bg-steak-300 text-white px-6 py-3 rounded-lg hover:bg-steak-100 transition-colors font-medium"
           >
             Retake Quiz
           </Link>
           <Link 
             href="/" 
-            className="flex-1 text-center bg-[#fbba72]/50 text-gray-800 px-6 py-3 rounded-lg hover:bg-[#fbba72] transition-colors font-medium"
+            className="flex-1 text-center bg-steak-50 text-gray-800 px-6 py-3 rounded-lg hover:bg-steak-50 transition-colors font-medium"
           >
             Back to Home
           </Link>
