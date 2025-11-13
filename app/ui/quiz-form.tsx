@@ -70,17 +70,17 @@ export default function SteakQuizForm() {
   return (
     <div className="space-y-3">
       <div className="flex-1 rounded-lg px-6 pb-4 pt-8">
-        <h1 className={`text-steak-400 dark:text-white mb-3 text-2xl`}>
+        <h1 className={`text-steak-400 mb-3 text-2xl`}>
           Please answer these questions: 
         </h1>
         <div className="w-full">
           <label
-            className="mb-3 mt-5 block text-lg text-black dark:text-white"
+            className="mb-3 mt-5 block text-lg text-black"
             htmlFor="priority"
           >
             Question 1: Organize Your Priorities
           </label>
-          <p className="mb-4 text-sm text-gray-800 dark:text-white">
+          <p className="mb-4 text-sm text-gray-800">
             Drag to reorder from most important (top) to least important (bottom).
           </p>
 
@@ -92,7 +92,7 @@ export default function SteakQuizForm() {
                 onDragStart={() => handleDragStart(priority)}
                 onDragOver={handleDragOver}
                 onDrop={() => handleDrop(priority)}
-                className="bg-transparent text-black p-4 rounded-md border-2 cursor-move hover:bg-steak-100 hover:text-white transition-colors"
+                className="bg-transparent text-black p-4 rounded-md border-steak-400 border-2 cursor-move hover:bg-steak-100 hover:text-white transition-colors"
               >
                 <div className="flex justify-between items-center text-gray-800 hover:text-white">
                   <span className="font-medium capitalize">{priority}</span>
@@ -103,7 +103,7 @@ export default function SteakQuizForm() {
           </div>
 
           <label
-            className="mb-3 mt-5 block text-lg text-black dark:text-white"
+            className="mb-3 mt-5 block text-lg text-black"
             htmlFor="doneness"
           >
             Question 2: Select Your Preferred Doneness
@@ -115,7 +115,7 @@ export default function SteakQuizForm() {
               name="doneness"
               value={doneness}
               onChange={(e) => setDoneness(e.target.value as Doneness)}
-              className="peer block w-full rounded-md bg-transparent py-3 px-4 text-sm outline-2 placeholder:text-gray-800 hover:bg-steak-100 hover:text-white focus:ring-2"
+              className="peer block w-full bg-transparent text-black p-4 rounded-md border-2 border-steak-400 cursor-move hover:bg-steak-100 hover:text-white transition-colors text-sm outline-2 placeholder:text-gray-800 focus:ring-2"
               aria-describedby="doneness-error"
             >
               <option value="">
